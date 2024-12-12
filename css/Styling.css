@@ -41,6 +41,7 @@ p {
     background: #ebe7dd;
     transition: 0.5s;
     z-index:2;
+    font-weight:bold;
 }
 
 #sidebar2 {
@@ -74,7 +75,7 @@ p {
 
 }
 #sidebar2 button{
-    font-size: 12px;
+    font-size: 15px;
     text-transform: uppercase;
     letter-spacing: 2px;
     color: black;
@@ -126,9 +127,9 @@ p {
 #sidebar .position {
     display: block;
     margin-bottom: 2em;
-    font-size: 12px;
-    font-family: "Quicksand", Arial, sans-serif;
+    font-size: 15px;
     text-transform: uppercase;
+    font-weight:bold;
 }
 
 #sidebar #main-menu {
@@ -156,8 +157,7 @@ p {
     margin: 0 0 10px 0;
     padding: 0;
     list-style: none;
-    font-size: 12px;
-    font-weight: 500;
+    font-size: 15px;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
@@ -168,7 +168,7 @@ p {
         text-decoration: none;
         position: relative;
         padding: 10px 0;
-        font-family: "Quicksand", Arial, sans-serif;
+        font-weight:bold;
         -webkit-transition: 0.3s;
         -o-transition: 0.3s;
         transition: 0.3s;
@@ -256,6 +256,8 @@ p {
         z-index: 10000;
         cursor: pointer;
         display:block;
+        width:20%;
+        height:20%;
     }
 
     #main {
@@ -266,10 +268,19 @@ p {
 
     /* About and Services Columns */
     .abcols, .sercols {
-        width: 100%;
-        margin: 10px 0;
+        width: 80%;
+        margin:10%;
         clear:both;
     }
+    p{
+        width:80%;
+        margin:10%;
+    }
+    #edu{
+        width:80%;
+        margin:10%;
+    }
+
 
     .services {
         padding: 1em;
@@ -331,8 +342,8 @@ p {
 #home .flexslider .flex-control-nav li a{
     background: rgba(0,0,0,0.5);
     box-shadow:none;
-    width:12px;
-    height:12px;
+    width:15px;
+    height:15px;
     cursor:pointer;
 }
 #home .flexslider .flex-control-nav li a.flex-active{
@@ -381,7 +392,7 @@ p {
 }
 /*Download CV button designing*/
 #home .flexslider .slider-text-inner .btn {
-    font-size: 12px;
+    font-size: 15px;
     text-transform: uppercase;
     letter-spacing: 2px;
     color: white;
@@ -673,7 +684,7 @@ width: 38%;
 
 }
 .contact-section button{
-    font-size: 12px;
+    font-size: 15px;
     text-transform: uppercase;
     letter-spacing: 2px;
     color: black;
