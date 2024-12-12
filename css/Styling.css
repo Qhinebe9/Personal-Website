@@ -313,7 +313,7 @@ p {
         #home .flexslider .slides li {
             background-repeat: round;
             background-size: cover;
-            min-height: 700px;
+            min-height: 100vh;
         }
     #home .flexslider .flex-control-nav{
         bottom:20px;
