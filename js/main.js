@@ -44,7 +44,7 @@ window.addEventListener('scroll',function(){
 	const sections=document.querySelectorAll('section');
 	sections.forEach(section=>{
 		const rect= section.getBoundingClientRect();
-		if (rect.top<= this.window.innerHeight && rect.bottom>=0){
+		if (rect.top<= window.innerHeight && rect.bottom>=0){
 			FadeInSection(section.id);
 			getLiByNavSection(section.id);
 
@@ -60,7 +60,8 @@ navl.forEach(link=>{
 		document.getElementById(targetSectionId).scrollIntoView({
 			behavior: 'smooth'
 		});
-		FadeInSection(targetSectionId)
+		FadeInSection(targetSectionId);
+		getLiByNavSection(section.id);
 	});
 });
 //counters
@@ -203,6 +204,5 @@ function adjustLayout() {
 // Initial layout adjustment
 adjustLayout();
 
-// Recalculate layout on window resize
-window.addEventListener('resize', adjustLayout);
+
 

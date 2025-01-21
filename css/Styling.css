@@ -280,6 +280,22 @@ p {
         width:80%;
         margin:10%;
     }
+    #ser{
+        width:80%;
+        margin:10%;
+    }
+    #ab{
+        width:80%;
+        margin:10%;
+    }
+    #sk{
+        width:80%;
+        margin:10%;
+    }
+    #exp{
+        width:80%;
+        margin:10%;
+    }
 
 
     .services {
@@ -564,7 +580,7 @@ background-attachment: fixed;
 .counter-container {
     display: inline-block;  /* Ensures each counter is stacked vertically with its heading */
     text-align: center;
-    margin: 20px;
+    margin: 2%;
 }
 /*progress bars*/
 .progress-wrapper {
