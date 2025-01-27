@@ -136,7 +136,7 @@ window.addEventListener('scroll', function() {
 	const progressBars = document.querySelectorAll('.progress-bar');
 	
 	progressBars.forEach(progressBar => {
-		if (isInViewport(progressBar) && !progressBar.classList.contains('animated')) {
+		if (isInViewport(progressBar)) {
 			// Assign target values
 			let targetValue;
 			if (progressBar.id === 'progressBar1') {
