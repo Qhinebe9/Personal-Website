@@ -8,11 +8,8 @@ function getLiByNavSection(navSectionValue) {
             // If found, return the parent <li> element
              anchor.parentElement.classList.add("active");
         }
-		else
-		{
-			if (anchor.parentElement.classList.contains("active"))
-				anchor.parentElement.classList.remove("active");
-		}
+		if (anchor.parentElement.classList.contains("active") && !(anchor.getAttribute('data-nav-section') === navSectionValue))
+			anchor.parentElement.classList.remove("active");
 	}
 }
 function FadeInSection(sectionID){
@@ -40,17 +37,26 @@ function FadeInSection(sectionID){
 
 
 }
-window.addEventListener('scroll',function(){
-	const sections=document.querySelectorAll('section');
-	sections.forEach(section=>{
-		const rect= section.getBoundingClientRect();
-		if (rect.top<= window.innerHeight && rect.bottom>=0){
-			FadeInSection(section.id);
-			getLiByNavSection(section.id);
-
-		}
+window.addEventListener('scroll', function() {
+	const sections = document.querySelectorAll('section');
+	
+	sections.forEach(section => {
+	  const rect = section.getBoundingClientRect();
+	  
+	  // Check if the section is in the viewport
+	  if (rect.top <= window.innerHeight && rect.bottom >= 0) {
+		const targetSectionId = section.getAttribute('id');
+		console.log(targetSectionId); // Logs the full section id, e.g., 'section1', 'section2'
+  
+		// Fade in the section (you may have a function for this)
+		FadeInSection(targetSectionId);
+		
+		// Call function to update the navigation based on the section's id
+		getLiByNavSection(targetSectionId);
+	  }
 	});
-});
+  });
+  
 //handling navigation link clicks to trigger the fade-in effect
 const navl= document.querySelectorAll('nav a');
 navl.forEach(link=>{
@@ -61,7 +67,7 @@ navl.forEach(link=>{
 			behavior: 'smooth'
 		});
 		FadeInSection(targetSectionId);
-		getLiByNavSection(section.id);
+		getLiByNavSection(targetSectionId);
 	});
 });
 //counters
