@@ -46,7 +46,6 @@ window.addEventListener('scroll', function() {
 	  // Check if the section is in the viewport
 	  if (rect.top <= window.innerHeight && rect.bottom >= 0) {
 		const targetSectionId = section.getAttribute('id');
-		console.log(targetSectionId); // Logs the full section id, e.g., 'section1', 'section2'
   
 		// Fade in the section (you may have a function for this)
 		FadeInSection(targetSectionId);
