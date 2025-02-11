@@ -667,6 +667,38 @@ width: 38%;
                 padding: 1.5em;
                 margin-left: 60px;
        }
+@media screen and (max-width: 768px) {
+    #exp{
+        width:90%;
+        margin-right:0;
+    }
+    .timeline{
+        padding:0;
+    }
+    .timeline .timeline-entry {
+        position: relative;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        clear: both; 
+        border:none;
+
+    }
+    .timeline-centered .timeline-entry .timeline-entry-inner {
+        display:none;
+    }
+    .timeline-icon {
+        display: none;
+}
+    .timeline-icon i {
+            color: #fff; 
+    }
+        .timeline-label {
+                position: relative;
+                background: #f2f3f7;
+                padding: 1.5em;
+                margin:0;
+       }
+    }
 /*contact section at the bottom*/
 .contact-section {
         background: #ebe7dd;
