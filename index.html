@@ -1,0 +1,427 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Qhamani Mancotywa</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--linking html to css-->
+    <!--bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/behind.css">
+    <link rel="stylesheet" href="css/Styling.css">
+
+    <link rel="stylesheet" href="css/flexslider.css" />
+    <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css" />
+    <!--animations script-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+</head>
+
+<body>
+    <div id="epage">
+        <div class="burger-menu" onclick="toggleSidebar()">☰</div>
+        <aside id="sidebar">
+            <div class="text-center">
+                <div class="profile-img" style="background-image: url(images/fieldpic.jpg);"></div>
+                <h1 id="fullname"><a href="#hero">Qhamani Mancotywa</a></h1>
+                <span class="position"><a href="#hero" style="text-decoration-line:none; color:black;">Junior
+                        Engineer</a><br>in South Africa</span>
+            </div>
+            <nav id="main-menu">
+                <div id="navbar" class="collapse">
+                    <ul>
+                        <li class="active" onclick="toggleSidebar()"><a href="#home" data-nav-section="home">Home</a>
+                        </li>
+                        <li onclick="toggleSidebar()"><a href="#ab" data-nav-section="ab">About</a></li>
+                        <li onclick="toggleSidebar()"><a href="#ser" data-nav-section="ser">Services</a></li>
+                        <li onclick="toggleSidebar()"><a href="#sk" data-nav-section="sk">Skills</a></li>
+                        <li onclick="toggleSidebar()"><a href="#edu" data-nav-section="edu">Education</a></li>
+                        <li onclick="toggleSidebar()"><a href="#exp" data-nav-section="exp">Experience</a></li>
+                        <li class="menu-contact" onclick="toggleSidebar()"><a href="#contact" id="contactli">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </aside><!--End of Side bar-->
+        <div id="main">
+            <section id="home" data-nav-section="home">
+                <div class="flexslider">
+                    <ul class="slides">
+                        <!--home page background images-->
+                        <!--first background image-->
+                        <li style="background-image: url(images/tablepic.jpg);">
+                            <div class="slider-text-inner">
+                                <div>
+                                    <h1 style="color:white">Hey!<br>I'm Qhamani</h1>
+                                    <p><a class="btn" href="data/Qhamani Mancotywa Curriculum Vitae.pdf"
+                                            download="Qhamani Mancotywa Curriculum Vitae.pdf">Download CV</a></p>
+                                </div>
+                            </div>
+                        </li>
+                        <li style="background-image: url(images/homebg.JPG);">
+                            <div class="slider-text-inner">
+                                <h1 style="color:white">I am <br>a Junior Developer</h1>
+                                <p><a class="btn" href="https://github.com/Qhinebe9">View Portfolio</a></p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section id="ab" class="about hidden-section" data-nav-section="ab">
+                <div class="about-desc animate__animated" data-key="left">
+                    <span class="heading-meta"> About Me</span>
+                    <h2 class="heading">Who Am I?</h2>
+                    <p><strong> Hey I'm Qhamani Mancotywa</strong></p>
+                    <p>As a final-year IT student at the University of Johannesburg, I am passionate about becoming a
+                        security specialist with a keen interest in digital forensics. My ability to socialize and
+                        connect with others enhances my teamwork and leadership skills, allowing me to collaborate
+                        effectively on projects. I aspire to make a meaningful impact in the cybersecurity field,
+                        utilizing my technical skills and dedication to safeguard digital environments. I look forward
+                        to exploring opportunities that align with my passion and expertise.</p>
+                </div>
+                <div class="abcols animate__animated" data-key="left">
+                    <div class="services color-1">
+                        <span class="icon2"><i class="fa fa-graduation-cap" aria-hidden="true"></i></span>
+                        <h3>Student</h3>
+                    </div>
+                </div>
+                <div class="abcols animate__animated" data-key="top">
+                    <div class="services color-2">
+                        <span class="icon2"><i class="fa fa-book" aria-hidden="true"></i></span>
+                        <h3>Bursary Recipient</h3>
+                    </div>
+                </div>
+                <div class="abcols animate__animated" data-key="right">
+                    <div class="services color-3">
+                        <span class="icon2"><i class="fa fa-users" aria-hidden="true"></i></span>
+                        <h3>Student Assistant</h3>
+                    </div>
+                </div>
+                <div class="abcols animate__animated" data-key="left">
+                    <div class="services color-4">
+                        <span class="icon2"><i class="fa fa-compass" aria-hidden="true"></i></span>
+                        <h3>Mentor</h3>
+                    </div>
+                </div>
+                <div class="abcols animate__animated animate__fadeInUp">
+                    <div class="services color-5">
+                        <span class="icon2"><i class="fa fa-futbol-o" aria-hidden="true"></i></span>
+                        <h3>Rugby Player</h3>
+                    </div>
+                </div>
+            </section>
+            <!--End of About me section-->
+            <section id="ser" class="about hidden-section" data-nav-section="ser">
+                <div class=" animate__animated" data-key="left">
+                    <span class="heading-meta"> What Do I do?</span>
+                    <h2 class="heading">Here are some of my expertise</h2>
+                </div>
+                <div class="sercols animate__animated" data-key="left">
+                    <div class="services color-1">
+                        <span class="icon2"><i class="fa fa-desktop" aria-hidden="true"></i></span>
+                        <h3>Software Development</h3>
+                        <p>The process of designing, creating, testing, and maintaining software applications.</p>
+                    </div>
+                </div>
+                <div class="sercols animate__animated" data-key="top">
+                    <div class="services color-2">
+                        <span class="icon2"><i class="fa fa-mobile" aria-hidden="true"></i></span>
+                        <h3>App Development</h3>
+                        <p>The creation of software applications for mobile devices or desktop platforms.</p>
+                    </div>
+                </div>
+                <div class="sercols animate__animated" data-key="right">
+                    <div class="services color-3">
+                        <span class="icon2"><i class="fa fa-microchip" aria-hidden="true"></i></span>
+                        <h3>Computer Programming</h3>
+                        <p>Computer programming is the act of writing code for computers to execute.</p>
+                    </div>
+                </div>
+                <div class="sercols animate__animated" data-key="left" style="clear:both;">
+                    <div class="services color-4">
+                        <span class="icon2"><i class="fa fa-globe" aria-hidden="true"></i></span>
+                        <h3>Front End Developer</h3>
+                        <p>This is the part of web development that focuses on the visual elements of a website.</p>
+                    </div>
+                </div>
+            </section>
+            <div class="parallax parimg">
+                <div class="counter-section">
+                    <div class="counter-container">
+                        <div id="counter1" class="counter">0</div>
+                        <h2>Number of All-Nighters</h2>
+                    </div>
+                    <div class="counter-container">
+                        <div id="counter2" class="counter">0</div>
+                        <h2>Number of Projects</h2>
+                    </div>
+                    <div class="counter-container">
+                        <div id="counter3" class="counter">0</div>
+                        <h2>Clients</h2>
+                    </div>
+                </div>
+            </div>
+            <section id="sk" class="about hidden-section" data-nav-section="sk">
+                <div class="animate__animated" data-key="left">
+                    <span class="heading-meta"> MY SPECIALITY</span>
+                    <h2 class="heading">MY SKILLS</h2>
+                    <p>As a Junior Developer, I am proficient in several programming languages, including Java, C++,
+                        Delphi, SQL, JavaScript, and HTML/CSS. I use Java to build object-oriented applications and have
+                        experience with basic software development practices. With C++, I am familiar with performance
+                        optimization and simple systems programming tasks. In Delphi, I have worked on creating Windows
+                        applications and have explored rapid application development. My SQL knowledge allows me to
+                        write queries and manage databases. I am also skilled in JavaScript, using it to develop
+                        interactive features in web applications, and in HTML/CSS for building responsive, user-friendly
+                        front-end designs.</p>
+                </div>
+                <div class="progress-wrapper">
+                    <div class="progress-title">JAVA
+                        <div class="progress-container">
+                            <div class="progress-bar" id="progressBar1" role="progressbar" aria-valuenow="0"
+                                aria-valuemin="0" aria-valuemax="100" style="background-color:#f8981d"></div>
+                        </div>
+                        90%
+                    </div>
+
+                    <!-- Progress Bar 2 -->
+                    <div class="progress-title">C++
+                        <div class="progress-container">
+                            <div class="progress-bar" id="progressBar2" role="progressbar" aria-valuenow="0"
+                                aria-valuemin="0" aria-valuemax="100" style="background-color:#00599C"></div>
+                        </div>
+                        60%
+                    </div>
+
+                    <!-- Progress Bar 3 -->
+                    <div class="progress-title">Delphi
+                        <div class="progress-container">
+                            <div class="progress-bar" id="progressBar3" role="progressbar" aria-valuenow="0"
+                                aria-valuemin="0" aria-valuemax="100" style="background-color:#F0A500 "></div>
+                        </div>
+                        60%
+                    </div>
+
+                    <!-- Progress Bar 4 -->
+                    <div class="progress-title">SQL
+                        <div class="progress-container">
+                            <div class="progress-bar" id="progressBar4" role="progressbar" aria-valuenow="0"
+                                aria-valuemin="0" aria-valuemax="100" style="background-color:#a84cb8"></div>
+                        </div>
+                        80%
+                    </div>
+
+                    <!-- Progress Bar 5 -->
+                    <div class="progress-title">JavaScript
+                        <div class="progress-container">
+                            <div class="progress-bar" id="progressBar5" role="progressbar" aria-valuenow="0"
+                                aria-valuemin="0" aria-valuemax="100" style="background-color:#f7df1e">
+
+                            </div>
+                        </div>
+                        60%
+                    </div>
+
+                    <!-- Progress Bar 6 -->
+                    <div class="progress-title">HTML/CSS
+                        <div class="progress-container">
+                            <div class="progress-bar" id="progressBar6" role="progressbar" aria-valuenow="0"
+                                aria-valuemin="0" aria-valuemax="100" style="background-color:#e44d26"></div>
+                        </div>
+                        85%
+                    </div>
+
+                    <!-- Progress Bar 7 -->
+                    <div class="progress-title">Assembly
+                        <div class="progress-container">
+                            <div class="progress-bar" id="progressBar7" role="progressbar" aria-valuenow="0"
+                                aria-valuemin="0" aria-valuemax="100" style="background-color:#00bfae">
+
+                            </div>
+                        </div>
+                        70%
+                    </div>
+
+                    <!-- Progress Bar 8 -->
+                    <div class="progress-title">Python
+                        <div class="progress-container">
+                            <div class="progress-bar" id="progressBar8" role="progressbar" aria-valuenow="0"
+                                aria-valuemin="0" aria-valuemax="100" style="background-color:#306998 ">
+
+                            </div>
+                        </div>
+                        65%
+                    </div>
+
+                    <!-- Progress Bar 9 -->
+                    <div class="progress-title">VB
+                        <div class="progress-container">
+                            <div class="progress-bar" id="progressBar9" role="progressbar" aria-valuenow="0"
+                                aria-valuemin="0" aria-valuemax="100" style="background-color:#9458eb ">
+
+                            </div>
+                        </div>
+                        75%
+                    </div9
+                </div>
+            </section>
+            <section id="edu" class="about hidden-section" data-nav-section="edu">
+                <div class="animate__animated" data-key="left">
+                    <span class="heading-meta"> EDUCATION</span>
+                    <h2 class="heading">QUALIFICATIONS</h2>
+                </div>
+                <div class="container" style="max-width: 850px;">
+                    <div class="accordion" id="educationAccordion">
+                        <!-- High School Section -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    High School
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#educationAccordion">
+                                <div class="accordion-body">
+                                    <strong>Stirling High School | 2017 – 2021</strong>
+                                    <ul>
+                                        <li>Academic Colours</li>
+                                        <li>Participated in: Rugby, Cross-Country, Cricket, Junior One Act Plays,
+                                            Networking Society</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Bachelor Degree Section -->
+                        <div class="accordion-item  ">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    BSc in IT in Computer Science and Informatics
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                data-bs-parent="#educationAccordion">
+                                <div class="accordion-body">
+                                    <strong>University of Johannesburg, Johannesburg | 2022 – 2024</strong>
+                                    <ul>
+                                        <li>UJenius Club(2022)</li>
+                                        <li>ACSSE Student Assistant(2024)</li>
+                                        <li>Koshuis Rugby(2022-2024)</li>
+                                        <li>Computer Science Top Ten Achiever(2022)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="exp" class="about hidden-section" data-nav-section="exp">
+                <div class="animate__animated" data-key="left">
+                    <span class="heading-meta">EXPERIENCE</span>
+                    <h2 class="heading">WORK EXPERIENCE</h2>
+                </div>
+                <div class="timeline  animate__animated" data-key="right">
+                    <article class="timeline-entry">
+                        <div class="timeline-entry-inner">
+                            <div class="timeline-icon" style="color:blue;">
+                                <i class="fa fa-briefcase" aria-hidden="true"></i>
+                            </div>
+                            <div class="timeline-label">
+                                <h2>Student Assistant |<span>2024</span></h2>
+                                <p>As a Student Assistant, I was responsible for supporting second-year students in
+                                    various academic capacities. My mentorship role involved offering guidance on exam
+                                    preparation and knowledge management, helping students optimize their study
+                                    techniques and manage coursework effectively. I also marked weekly practical
+                                    assignments, providing detailed feedback to help students improve their practical
+                                    and theoretical understanding. Additionally, I served as an invigilator for semester
+                                    tests, ensuring a fair and orderly exam environment while adhering to institutional
+                                    policies. These roles allowed me to develop strong communication, leadership, and
+                                    organizational skills, while contributing to the academic success of my peers.</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="timeline-entry animate__animated" data-key="right">
+                        <div class="timeline-entry-inner">
+                            <div class="timeline-icon" style="background-color:red;">
+                                <i class="fa fa-briefcase" aria-hidden="true"></i>
+                            </div>
+                            <div class="timeline-label">
+                                <h2>Mentor |<span>2024</span></h2>
+                                <p>As a mentor on a bursary program, I provided guidance and support to first-year IT
+                                    students, focusing on both their academic progress and personal well-being. My
+                                    responsibilities included assisting students with exam preparation, helping them
+                                    overcome complex coding challenges, and offering advice on managing their university
+                                    journey. I also created a safe and encouraging space for students to openly discuss
+                                    any concerns they had about their studies or university life. In addition, I played
+                                    an advocacy role by offering feedback to the bursary funder whenever a student
+                                    required additional support or resources to ensure their success in the program.
+                                    This role strengthened my mentoring, leadership, and communication skills while
+                                    fostering a sense of community among the students.</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="timeline-entry animate__animated" data-key="top">
+                        <div class="timeline-entry-inner">
+                            <div class="timeline-icon" style="background-color:white;">
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+            </section>
+            <section id="contact" class="contact-section">
+                <div class="text-center">
+                    <h1>Get In Touch With Me</h1>
+                </div>
+                <form action="https://formspree.io/f/mgvolkwk" method="POST">
+                    <label>Name:</label><br>
+                    <input type="text" id="name" name="Name" required><br>
+                    <label for="email">Email Address:</label><br>
+                    <input type="email" id="email" name="email" required><br>
+                    <label>Message:</label><br>
+                    <textarea name="message" rows="6" cols="25"></textarea><br>
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+
+        </div><!--end of main-->
+        <aside id="sidebar2">
+            <div class="text-center">
+                <h1>Get In Touch With Me</h1>
+            </div>
+            <form action="https://formspree.io/f/mgvolkwk" method="POST">
+                <label>Name:</label><br>
+                <input type="text" id="name" name="Name" required><br>
+                <label for="email">Email Address:</label><br>
+                <input type="email" id="email" name="email" required><br>
+                <label>Message:</label><br>
+                <textarea name="message" rows="6" cols="25"></textarea><br>
+                <button type="submit">Submit</button>
+            </form>
+        </aside><!--End of Side bar on right-->
+    </div><!--End of empty page-->
+
+    <!-- Flexslider -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.flexslider-min.js"></script>
+    <script>
+        $(window).load(function () {
+            $('.flexslider').flexslider({
+                animation: "slide"
+            });
+        });
+        function toggleSidebar() {
+            const sidebar = document.getElementById('sidebar');
+            sidebar.classList.toggle('open');
+        }
+
+
+    </script>
+    <!--bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.rawgit.com/bfintal/Counter-Up/master/jquery.counterup.min.js"></script>
+    <!--Main js-->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

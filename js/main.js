@@ -156,6 +156,12 @@ window.addEventListener('scroll', function() {
 				targetValue = 60;
 			} else if (progressBar.id === 'progressBar6') {
 				targetValue = 70;
+			} else if (progressBar.id === 'progressBar7') {
+				targetValue = 70;
+			} else if (progressBar.id === 'progressBar8') {
+				targetValue = 65;
+			} else if (progressBar.id === 'progressBar9') {
+				targetValue = 75;
 			}
 
 			// Animate the progress bar
