@@ -349,6 +349,21 @@ p {
         float:left;
         width:auto;
     }
+#home .flexslider .slides #firstpic{
+        background-image: url("../images/tablepic.jpg");
+    }
+#home .flexslider .slides #secondpic{
+        background-image: url("../images/homebg.JPG");
+    }
+@media screen and (max-width: 768px) {
+    #home .flexslider .slides #firstpic{
+        background-image: url("../images/firsteam.jpg");
+    
+        }
+    #home .flexslider .slides #secondpic{
+        background-image: url("../images/imgbg1.JPG");
+        }
+    }
 
 /*Designing small circles for the background pictures on home page*/
 #home .flexslider .flex-control-nav li{
@@ -668,6 +683,10 @@ width: 38%;
                 margin-left: 60px;
        }
 @media screen and (max-width: 768px) {
+    #home .flexislider #firstpic{
+        background-image: url(/images/imgbg1.JPG);
+
+    }
     #exp{
         width:90%;
         margin-right:0;
