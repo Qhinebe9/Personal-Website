@@ -60,7 +60,10 @@ p {
 #sidebar2 input{
     margin-bottom:5px;
     margin-left: 10px;
-    border-radius: 8px;
+    border:none;
+    border-bottom:3px solid rgb(128 128 128);
+    outline:none;
+    background-color: transparent;
 
 }
 #sidebar2 label{
@@ -71,14 +74,19 @@ p {
 #sidebar2 textarea{
     margin-bottom:5px;
     margin-left: 10px;
-    border-radius: 8px;
+    width:95%;
+    margin-right:2%;
+    border:none;
+    border:3px solid rgb(128 128 128);
+    outline:none;
+    background-color: transparent;
 
 }
 #sidebar2 button{
     font-size: 15px;
     text-transform: uppercase;
     letter-spacing: 2px;
-    color: black;
+    color: rgb(128 128 128);
     padding: 10px 15px !important;
     border: solid;
     border-radius: 8px;
@@ -258,6 +266,7 @@ p {
         display:block;
         width:20%;
         height:20%;
+        font-size:28px;;
     }
 
     #main {
@@ -275,6 +284,7 @@ p {
     p{
         width:80%;
         margin:10%;
+        font-size:12px;
     }
     #edu{
         width:80%;
@@ -572,18 +582,22 @@ p{
 
 /*parallax section*/
 .parallax{
-background-attachment: fixed;
+  background-attachment: fixed;
   background-position: center;
   background-size: cover;
   height: 200px;
   width: 100%;
   color:white;
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 .parimg{
     background-image: url("../images/rugby.JPG");
+}
+@media screen and (max-width: 768px) {
+    .parimg {
+        background-image: url("../images/parallax2.jpg");
+    }
 }
 /*counter animations*/
 
@@ -726,6 +740,10 @@ width: 38%;
         margin-top: 40px;
         display: none; /* Hide by default */
 }
+.contact-section input{
+    border-bottom:3px solid black;
+    outline:none;
+}
 #contactli{
     display:none;
 }
@@ -742,19 +760,26 @@ width: 38%;
     }
 }
 .contact-section input{
-    border-radius: 8px;
+    border:none;
+    border-bottom:3px solid rgb(128 128 128);
+    outline:none;
+    background-color: transparent;
 
 }
 
 .contact-section textarea{
-    border-radius: 8px;
+    border:none;
+    border:3px solid rgb(128 128 128);
+    outline:none;
+    background-color: transparent;
+    
 
 }
 .contact-section button{
     font-size: 15px;
     text-transform: uppercase;
     letter-spacing: 2px;
-    color: black;
+    color: rgb(128 128 128);
     padding: 10px 15px !important;
     border: solid;
     border-radius: 8px;
