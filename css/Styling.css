@@ -582,14 +582,16 @@ p{
 
 /*parallax section*/
 .parallax{
-  background-attachment: fixed;
-  background-position: center;
+  position:relative;
+  background-position: center center;
   background-size: cover;
   height: 250px;
   width: 100%;
   color:white;
   display: flex;
   align-items: center;
+  will-change: background-position;
+  background-image: url("../images/rugby.JPG")
 }
 .parimg{
     background-image: url("../images/rugby.JPG");

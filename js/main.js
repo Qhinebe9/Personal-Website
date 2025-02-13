@@ -69,16 +69,7 @@ navl.forEach(link=>{
 		getLiByNavSection(targetSectionId);
 	});
 });
-function updateParallax(){
-	const parallax=document.querySelectorAll('.parallax');
-	parallax.forEach(function(element){
-		const speed=0.5;
-		let scrollPosition=window.scrollY;
-		element.style.backgroundPosition= 'center ${-(scrollPosition * speed)}px';
-	});
-}
 
-window.addEventListener('scroll',updateParallax);
 //counters
 function animateCounter(id, start, end, duration){
 	let current=start;

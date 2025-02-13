@@ -429,6 +429,18 @@
             const sidebar = document.getElementById('sidebar');
             sidebar.classList.toggle('open');
         }
+        function updateParallax(){
+            var scrollPosition=window.scrollY;
+            const parallax=document.querySelector('.parallax');
+		    var speed= 0.5;
+		    parallax.style.backgroundPosition= ' center ${-(scrollPosition * speed)}px';
+}
+
+window.addEventListener('scroll',function(){
+    updateParallax();
+
+});
+updateParallax();
 
 
     </script>
