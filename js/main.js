@@ -76,8 +76,9 @@ function updateParallax(){
 		let scrollPosition=window.scrollY;
 		element.style.backgroundPosition= 'center ${-(scrollPosition * speed)}px';
 	});
-	window.addEventListener('scroll',updateParallax);
 }
+
+window.addEventListener('scroll',updateParallax);
 //counters
 function animateCounter(id, start, end, duration){
 	let current=start;
