@@ -583,9 +583,9 @@ p{
 /*parallax section*/
 .parallax{
   background-attachment: fixed;
-  position:relative;
+  background-position: center;
   background-size: cover;
-  height: 200px;
+  height: 250px;
   width: 100%;
   color:white;
   display: flex;
@@ -596,10 +596,9 @@ p{
 }
 @media screen and (max-width: 768px) {
     .parallax{
-        background-attachment: fixed;
         background-position: center;
         background-size: cover;
-        height: 100px;
+        height: 150px;
         width: 100%;
         color:white;
         display: flex;
