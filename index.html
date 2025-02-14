@@ -145,7 +145,7 @@
                     </div>
                 </div>
             </section>
-            <div class="parallax parimg">
+            <div id="parallax-item" class="parallax">
                 <div class="counter-section">
                     <div class="counter-container">
                         <div id="counter1" class="counter">0</div>
@@ -429,18 +429,15 @@
             const sidebar = document.getElementById('sidebar');
             sidebar.classList.toggle('open');
         }
-        function updateParallax(){
-            var scrollPosition=window.scrollY;
-            const parallax=document.querySelector('.parallax');
-		    var speed= 0.5;
-		    parallax.style.backgroundPosition= ' center ${-(scrollPosition * speed)}px';
-}
+        document.addEventListener('scroll', function() {
+    const parallax = document.getElementById('parallax-item');
+    // Calculate the scroll position
+    const scrollPosition = window.pageYOffset;
 
-window.addEventListener('scroll',function(){
-    updateParallax();
-
+    // Apply parallax effect only if the element is in the viewport
+        // Adjust the background position based on scroll
+        parallax.style.background.PositionY = scrollPosition * 0.5 + "px";
 });
-updateParallax();
 
 
     </script>

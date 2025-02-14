@@ -582,37 +582,28 @@ p{
 
 /*parallax section*/
 .parallax{
-  position:relative;
-  background-position: center center;
-  background-size: cover;
-  height: 250px;
+  display:flex;
+  min-height: 250px;
   width: 100%;
   color:white;
-  display: flex;
   align-items: center;
-  will-change: background-position;
-  background-image: url("../images/rugby.JPG")
-}
-.parimg{
-    background-image: url("../images/rugby.JPG");
+  justify-content: center;
+  position:relative;
+  background:URL("../images/rugby.JPG");
+  background-size:cover;
+  background-position:center;
+  background-attachment:fixed;
 }
 @media screen and (max-width: 768px) {
-    .parallax{
-        background-position: center;
-        background-size: cover;
-        height: 150px;
-        width: 100%;
-        color:white;
-        display: flex;
-        align-items: center;
-      }
-    .parimg {
-        background-image: url("../images/parallax2.jpg");
+    .parallax {
+        height:150px;
     }
 }
+
 /*counter animations*/
 
 .counter-section {
+    position:relative;
     display: flex;
     justify-content: space-around;
     align-items: center;
