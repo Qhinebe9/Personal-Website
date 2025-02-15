@@ -589,22 +589,22 @@ p{
   align-items: center;
   justify-content: center;
   position:relative;
-  background:URL("../images/rugby.JPG");
+  background-image:URL("../images/rugby.JPG");
   background-size:cover;
   background-position:center;
   background-attachment:fixed;
 }
 @media screen and (max-width: 768px) {
     .parallax {
-        height:150px;
-        background-attachment:fixed;
-        background:URL("../images/parallax2.jpg");
+        height:200px;
+        background-image:URL("../images/parallax2.jpg");
     }
 }
 body.iphone .parallax {
-    background-attachment: initial;
-    background-position:center center;
-    background:URL("../images/parallax2.jpg");
+  background-size: cover;  /* Ensures the background covers the whole container */
+  background-position: center center; 
+  background-image:URL("../images/parallax2.jpg"); /* Centers the image horizontally and vertically */
+  background-attachment: initial; 
   }
 
 /*counter animations*/
