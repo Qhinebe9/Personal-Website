@@ -1,3 +1,7 @@
+if (navigator.userAgent.match(/iPhone/i)) {
+	// Add the 'iphone' class to the body tag
+	document.body.classList.add('iphone');
+  }
 function getLiByNavSection(navSectionValue) {
     const anchors = document.querySelectorAll('a[data-nav-section]');
     

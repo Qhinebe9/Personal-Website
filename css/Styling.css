@@ -597,8 +597,14 @@ p{
 @media screen and (max-width: 768px) {
     .parallax {
         height:150px;
+        background-attachment:fixed;
+        background:URL("../images/parallax2.jpg");
     }
 }
+body.iphone .parallax {
+    background-attachment: initial;
+    background:URL("../images/parallax2.jpg");
+  }
 
 /*counter animations*/
 
