@@ -603,6 +603,7 @@ p{
 }
 body.iphone .parallax {
     background-attachment: initial;
+    background-position:center center;
     background:URL("../images/parallax2.jpg");
   }
 
