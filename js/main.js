@@ -1,7 +1,6 @@
 if (navigator.userAgent.match(/iPhone/i)) {
 	// Add the 'iphone' class to the body tag
 	document.body.classList.add('iphone');
-	console.log("yes");
   }
 function getLiByNavSection(navSectionValue) {
     const anchors = document.querySelectorAll('a[data-nav-section]');
@@ -9,17 +8,25 @@ function getLiByNavSection(navSectionValue) {
     // Loop through each anchor and find the one with the matching data-nav-section
     for (let anchor of anchors) {
         // Check if the current <a> has the desired data-nav-section value
+		
+		if (anchor.getAttribute('data-nav-section') !== navSectionValue){
+            anchor.parentElement.classList.remove("active");
+		}
         if (anchor.getAttribute('data-nav-section') === navSectionValue) {
             // If found, return the parent <li> element
              anchor.parentElement.classList.add("active");
         }
-		if (anchor.parentElement.classList.contains("active") && !(anchor.getAttribute('data-nav-section') === navSectionValue))
-			anchor.parentElement.classList.remove("active");
+			
+		    
 	}
 }
 function FadeInSection(sectionID){
 	const section =document.getElementById(sectionID)
+	if (section!=null && section.classList.contains("hidden-section")){
+		
 	section.classList.remove("hidden-section");
+
+	}
 	const divs=section.querySelectorAll('div.animate__animated');
 	divs.forEach(function(divitem){
 		const rect=divitem.getBoundingClientRect();
@@ -45,20 +52,22 @@ function FadeInSection(sectionID){
 window.addEventListener('scroll', function() {
 	const sections = document.querySelectorAll('section');
 	
-	sections.forEach(section => {
-	  const rect = section.getBoundingClientRect();
-	  
-	  // Check if the section is in the viewport
-	  if (rect.top <= window.innerHeight && rect.bottom >= 0) {
-		const targetSectionId = section.getAttribute('id');
-  
-		// Fade in the section (you may have a function for this)
-		FadeInSection(targetSectionId);
+	if (sections!=null){
+		sections.forEach(section => {
+			const rect = section.getBoundingClientRect();
+			
+			// Check if the section is in the viewport
+			if (rect.top <= window.innerHeight && rect.bottom >= 0) {
+			  const targetSectionId = section.getAttribute('id');
 		
-		// Call function to update the navigation based on the section's id
-		getLiByNavSection(targetSectionId);
-	  }
-	});
+			  // Fade in the section (you may have a function for this)
+			  FadeInSection(targetSectionId);
+			  
+			  // Call function to update the navigation based on the section's id
+			  getLiByNavSection(targetSectionId);
+			}
+		  });
+	}
   });
   
 //handling navigation link clicks to trigger the fade-in effect
@@ -213,6 +222,7 @@ function adjustLayout() {
     } else {
         box2.style.display = 'block';
         box1.style.width = '65%';
+		if (contact!=null)
         contact.style.display = 'none';
         contactLi.style.display = 'none';
     }
